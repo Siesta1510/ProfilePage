@@ -41,7 +41,16 @@ body {
 .sidebar-menu{
     font-size: 20px;
     margin-top: 30px;
+    width: 240px;
+}
 
+.menu-list{
+    height: 40px !important;
+    line-height: 40px;
+    padding-left: 15px;
+}
+.sidebar-menu .menu-list:nth-child(even){
+    background-color: rgba(202, 188, 188, 0.527);
 }
 
 .sidebar-menu div{
@@ -54,9 +63,15 @@ body {
 }
 
 .product-nav{
-    padding: 20px;
+    width: 240px;
+    padding: 20px 20px;
     font-size: 23px;
     font-weight: 600;
+    border: 2px solid black;
+    background-color: black;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 3px;
 }
 .product-navbar{
     display: flex;
@@ -91,7 +106,7 @@ body {
 }
 
 .navbar-left button:nth-child(1){
-    background-color: #ee4d2d;
+    background-color: #000000;
     color: #fff;
 }
 
@@ -126,7 +141,13 @@ body {
     height: 40px;
     border: none;
     background-color: #fff;
+    cursor: pointer;
 }
+
+.navbar-right .button-left{
+    border-right: 1px solid gray;
+}
+
 
 .product-list{
     min-height: 400px;
@@ -134,13 +155,16 @@ body {
 
 .product-items{
     margin-top: 15px;
-
 }
 
 .product-item{
     height: 380px;
-    border-radius: 10px;
+    border-radius: 3px;
     cursor: pointer;
+}
+.product-item:hover{
+    transform: translateY(-2px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .product-item img{
@@ -166,6 +190,53 @@ body {
 }
 .product-status{
     height: 25%;
+    position: relative;
+    width: 100%;
+}
+.product-status .heart img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: -140%;
+    z-index: 10;
+}
+
+.product-status .heart img:hover{
+    width: 40px;
+    height: 40px;
+    transition: all 0.1s linear;
+}
+
+.unfavorite{
+
+}
+
+.favorite{
+    display: none;
+    top:0;
+}
+
+.stars{
+    width: 30px;
+    display: flex;
+}
+
+.stock{
+    position: absolute;
+    right: 0;
+    top:0;
+    bottom: 0;
+}
+
+.heart{
+    width: 40px;
+    height: 40px;
+}
+
+.stars img{
+    width: 16px;
+    height: 16px;
 }
 
 .product-page-number{
@@ -188,7 +259,7 @@ body {
 
 
 .product-page-number  .page-number{
-    background-color: #ee4d2d;
+    background-color: #000000;
     line-height: 35px;
     color: #fff;
     border-radius: 5px;

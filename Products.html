@@ -13,9 +13,9 @@
         <div class="product-nav">Danh mục</div>
         <hr />
         <div class="sidebar-menu">
-          <div>Sản phẩm</div>
-          <div>Large size</div>
-          <div>Small size</div>
+          <div class="menu-list">Sản phẩm</div>
+          <div class="menu-list">Large size</div>
+          <div class="menu-list">Small size</div>
         </div>
       </div>
 
@@ -36,7 +36,7 @@
           </div>
           <div class="navbar-right">
             <p>1/1</p>
-            <button><</button>
+            <button class="button-left"><</button>
             <button>></button>
           </div>
         </div>
@@ -52,7 +52,18 @@
                 <div class="product-name">Cây để bàn - phúc lộc thọ</div>
                 <div class="product-price">₫25.800</div>
                 <div class="product-status">
-                  Đã bán: 3,2k
+                  <div class="stars">
+                    <img class="star" src="./imgIcon/star.png" alt="" />
+                    <img class="star" src="./imgIcon/star.png" alt="" />
+                    <img class="star" src="./imgIcon/star.png" alt="" />
+                    <img class="star" src="./imgIcon/star.png" alt="" />
+                    <img class="star" src="./imgIcon/star.png" alt="" />
+                  </div>
+                  <div class="stock">On Hand: 3,2k</div>
+                  <div class="heart">
+                    <img class="unfavorite" src="./imgIcon/love.png" alt="" />
+                    <img class="favorite" src="./imgIcon/doki.png" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -65,7 +76,18 @@
                 <div class="product-name">Cây để bàn - phúc lộc thọ</div>
                 <div class="product-price">₫25.800</div>
                 <div class="product-status">
-                  Đã bán: 3,2k
+                  <div class="stars">
+                    <img class="star" src="./imgIcon/star.png" alt="" />
+                    <img class="star" src="./imgIcon/star.png" alt="" />
+                    <img class="star" src="./imgIcon/star.png" alt="" />
+                    <img class="star" src="./imgIcon/star.png" alt="" />
+                    <img class="star" src="./imgIcon/star.png" alt="" />
+                  </div>
+                  <div class="stock">On Hand: 3,2k</div>
+                  <div class="heart">
+                    <img class="unfavorite" src="./imgIcon/love.png" alt="" />
+                    <img class="favorite" src="./imgIcon/doki.png" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -78,7 +100,18 @@
                 <div class="product-name">Cây để bàn - phúc lộc thọ</div>
                 <div class="product-price">₫25.800</div>
                 <div class="product-status">
-                  Đã bán: 3,2k
+                  <div class="stars">
+                    <img class="star" src="./imgIcon/star.png" alt="" />
+                    <img class="star" src="./imgIcon/star.png" alt="" />
+                    <img class="star" src="./imgIcon/star.png" alt="" />
+                    <img class="star" src="./imgIcon/star.png" alt="" />
+                    <img class="star" src="./imgIcon/star.png" alt="" />
+                  </div>
+                  <div class="stock">On Hand: 3,2k</div>
+                  <div class="heart">
+                    <img class="unfavorite" src="./imgIcon/love.png" alt="" />
+                    <img class="favorite" src="./imgIcon/doki.png" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -91,7 +124,18 @@
                 <div class="product-name">Cây để bàn - phúc lộc thọ</div>
                 <div class="product-price">₫25.800</div>
                 <div class="product-status">
-                  Đã bán: 3,2k
+                  <div class="stars">
+                    <img class="star" src="./imgIcon/star.png" alt="" />
+                    <img class="star" src="./imgIcon/star.png" alt="" />
+                    <img class="star" src="./imgIcon/star.png" alt="" />
+                    <img class="star" src="./imgIcon/star.png" alt="" />
+                    <img class="star" src="./imgIcon/star.png" alt="" />
+                  </div>
+                  <div class="stock">On Hand: 3,2k</div>
+                  <div class="heart">
+                    <img class="unfavorite" src="./imgIcon/love.png" alt="" />
+                    <img class="favorite" src="./imgIcon/doki.png" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -104,18 +148,57 @@
                 <div class="product-name">Cây để bàn - phúc lộc thọ</div>
                 <div class="product-price">₫25.800</div>
                 <div class="product-status">
-                  Đã bán: 3,2k
+                  <div class="stars">
+                    <img class="star" src="./imgIcon/star.png" alt="" />
+                    <img class="star" src="./imgIcon/star.png" alt="" />
+                    <img class="star" src="./imgIcon/star.png" alt="" />
+                    <img class="star" src="./imgIcon/star.png" alt="" />
+                    <img class="star" src="./imgIcon/star.png" alt="" />
+                  </div>
+                  <div class="stock">On Hand: 3,2k</div>
+                  <div class="heart">
+                    <img class="unfavorite" src="./imgIcon/love.png" alt="" />
+                    <img class="favorite" src="./imgIcon/doki.png" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
         <div class="product-page-number">
-            <button><</button>
-            <button class="page-number">1</button>
-            <button>></button>
+          <button><</button>
+          <button class="page-number">1</button>
+          <button>></button>
         </div>
       </div>
     </div>
   </body>
+  <script>
+    const love = document.querySelectorAll(".unfavorite");
+    const loved = document.querySelectorAll(".favorite");
+    console.log(love);
+
+    function addFavoriteProduct() {
+      for (var i = 0; i < love.length; i++) {
+        love[i].addEventListener(
+          "click",
+          function (i) {
+            console.log(love[i]);
+            love[i].style.display = "none";
+            loved[i].style.display = "block";
+          }.bind(this, i)
+        );
+        loved[i].addEventListener(
+          "click",
+          function (i) {
+            loved[i].style.display = "none";
+            love[i].style.display = "block";
+          }.bind(this, i)
+        );
+      }
+    }
+
+    this.addFavoriteProduct();
+  </script>
 </html>
